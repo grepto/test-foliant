@@ -1,0 +1,21 @@
+title: 'Title from global foliant config'
+slug: slug_from_global_foliant_config
+src_dir: src
+tmp_dir: __folianttmp__
+
+chapters:
+  - index.md
+  - local_meta_and_img.md
+
+backend_config:
+  pandoc:
+    pandoc_path: pandoc
+    build_whole_project: true
+    markdown_flavor: markdown
+    slug: slug_from_pandoc_backend_config
+    vars:
+      title: 'Title from pandoc backend config'
+      second_title: 'subtitle from pandoc backend config'
+      toc-title: 'toc title from pandoc backend config'
+    params:
+      toc: true 
